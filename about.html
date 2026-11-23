@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About &amp; Explore | University Coding Club — ITM University, Gwalior</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Page-Specific Enhancements for About & Explore View */
+    .page-banner {
+      padding: 2.75rem 0 1.75rem;
+    }
+
+    .page-banner-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-left: 5px solid var(--accent-primary);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .page-banner-card h1 {
+      margin: 0.4rem 0 0.65rem;
+      font-size: clamp(1.8rem, 3.5vw, 2.55rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .page-banner-card p {
+      margin: 0;
+      color: var(--text-secondary);
+      font-size: 1rem;
+      max-width: 78ch;
+    }
+
+    .meta-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 1.15rem;
+    }
+
+    .meta-pill {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .step-badge {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent-teal);
+      background: #e6f4f1;
+      padding: 0.22rem 0.6rem;
+      border-radius: 999px;
+      margin-bottom: 0.55rem;
+    }
+
+    .track-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .track-level {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent-amber);
+      background: #fef3c7;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+    }
+
+    .checklist-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .checklist-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .check-mark {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent-primary);
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    .code-snippet {
+      margin-top: 0.75rem;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 0.65rem 0.85rem;
+      font-family: Consolas, Monaco, "Courier New", monospace;
+      font-size: 0.84rem;
+      color: var(--text-primary);
+      overflow-x: auto;
+    }
+
+    .faq-item details {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-item details + details {
+      margin-top: 0.75rem;
+    }
+
+    .faq-item summary {
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--text-primary);
+      list-style: none;
+    }
+
+    .faq-item details p {
+      margin: 0.65rem 0 0;
+      color: var(--text-secondary);
+      font-size: 0.94rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Sticky Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="University Coding Club Home">
+        <span class="logo-badge">
+          <img src="Screenshot_20261123_182825_Google.jpg" alt="ITM University Gwalior Logo" />
+        </span>
+        <span>
+          <span class="brand-title">University Coding Club</span>
+          <span class="brand-sub">ITM University, Gwalior • Code. Create. Collaborate.</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active" aria-current="page">About &amp; Explore</a>
+        <a href="#mission" class="nav-link">Mission</a>
+        <a href="#tracks" class="nav-link">Tracks</a>
+        <a href="#architecture" class="nav-link">Architecture</a>
+        <a href="index.html#join" class="nav-link">Join Club</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <div class="page-banner-card">
+          <span class="badge">Second Page • About &amp; Explore</span>
+          <h1>Building a Strong Engineering Culture at ITM University</h1>
+          <p>
+            University Coding Club brings together students from B.Tech Computer Science and Engineering
+            to practice clean coding, build practical web and software projects, prepare for technical
+            competitions, and grow together under the motto <strong>"Code. Create. Collaborate."</strong>
+          </p>
+
+          <div class="meta-pills">
+            <span class="meta-pill">Institution: ITM University, Gwalior</span>
+            <span class="meta-pill">Batch: 2026–2030</span>
+            <span class="meta-pill">Branch: B.Tech CSE (Section C)</span>
+            <span class="meta-pill">Roll No: BETN1CS26134</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Core Pillars -->
+    <section id="mission" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Club Mission &amp; Core Pillars</h2>
+          <p>Structured around fundamentals, hands-on execution, and peer collaboration.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <span class="step-badge">Pillar 01 • Code</span>
+            <h3>Strong Problem-Solving Foundations</h3>
+            <p>
+              Focus on logical thinking, C programming fundamentals, clean syntax, debugging habits,
+              and consistent practice on coding platforms.
+            </p>
+            <span class="tag">C &amp; Logic Building</span>
+          </article>
+
+          <article class="card">
+            <span class="step-badge">Pillar 02 • Create</span>
+            <h3>Real Front-End &amp; Web Projects</h3>
+            <p>
+              Turn concepts into responsive user interfaces using semantic HTML5, modern CSS3 grids,
+              and clean client-side JavaScript interactions.
+            </p>
+            <span class="tag">HTML5 • CSS3 • JS</span>
+          </article>
+
+          <article class="card">
+            <span class="step-badge">Pillar 03 • Collaborate</span>
+            <h3>Git, GitHub &amp; Team Execution</h3>
+            <p>
+              Maintain organized repositories, write clear documentation in <code>README.md</code>,
+              and work as a disciplined team for hackathons and college events.
+            </p>
+            <span class="tag">Version Control &amp; Teamwork</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Learning Tracks Filter -->
+    <section id="tracks" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Learning Tracks &amp; Skill Roadmap</h2>
+          <p>Filter tracks to explore what members practice across the semester.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter learning tracks">
+          <button type="button" class="filter-btn active" data-filter="all">All Tracks</button>
+          <button type="button" class="filter-btn" data-filter="web">Web &amp; UI</button>
+          <button type="button" class="filter-btn" data-filter="programming">Programming</button>
+          <button type="button" class="filter-btn" data-filter="tools">Git &amp; Workflow</button>
+        </div>
+
+        <div class="grid-3" id="tracksGrid">
+          <article class="card track-card" data-category="web">
+            <div class="track-header">
+              <h3>Semantic HTML5 &amp; Accessibility</h3>
+              <span class="track-level">Foundational</span>
+            </div>
+            <p>
+              Structure multi-page websites with clean landmarks, accessible labels, proper headings,
+              and form-inspired card layouts.
+            </p>
+            <span class="tag">Web &amp; UI</span>
+          </article>
+
+          <article class="card track-card" data-category="web">
+            <div class="track-header">
+              <h3>Modern CSS3 &amp; Responsive Design</h3>
+              <span class="track-level">Core</span>
+            </div>
+            <p>
+              Use CSS custom properties, Flexbox, CSS Grid, hover states, and media queries for
+              desktop, tablet, and mobile screens.
+            </p>
+            <span class="tag">Web &amp; UI</span>
+          </article>
+
+          <article class="card track-card" data-category="programming">
+            <div class="track-header">
+              <h3>C Programming &amp; Algorithms</h3>
+              <span class="track-level">Core</span>
+            </div>
+            <p>
+              Build speed and accuracy in conditionals, loops, arrays, functions, and structured
+              problem decomposition.
+            </p>
+            <span class="tag">Programming</span>
+          </article>
+
+          <article class="card track-card" data-category="tools">
+            <div class="track-header">
+              <h3>Git &amp; GitHub Portfolio</h3>
+              <span class="track-level">Essential</span>
+            </div>
+            <p>
+              Organize project files cleanly, write clear commit messages, and showcase completed
+              assignments publicly on GitHub.
+            </p>
+            <span class="tag">Git &amp; Workflow</span>
+          </article>
+
+          <article class="card track-card" data-category="web">
+            <div class="track-header">
+              <h3>Interactive DOM &amp; UI Logic</h3>
+              <span class="track-level">Intermediate</span>
+            </div>
+            <p>
+              Add live filtering, instant feedback banners, and smooth navigation without heavy
+              external dependencies.
+            </p>
+            <span class="tag">Web &amp; UI</span>
+          </article>
+
+          <article class="card track-card" data-category="tools">
+            <div class="track-header">
+              <h3>Technical Documentation &amp; Demos</h3>
+              <span class="track-level">Competition Ready</span>
+            </div>
+            <p>
+              Present ideas clearly with structured documentation, live walkthroughs, and reliable
+              file organization.
+            </p>
+            <span class="tag">Git &amp; Workflow</span>
+          </article>
+        </div>
+
+        <div id="trackStatusBanner" class="status-banner" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Project Architecture & Repository Structure -->
+    <section id="architecture" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Two-Page Architecture &amp; File Structure</h2>
+          <p>Clean separation of structure, visual styling, documentation, and brand assets.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="checklist-box">
+            <h3>Repository File Checklist</h3>
+
+            <div class="checklist-item">
+              <span class="check-mark">1</span>
+              <div>
+                <strong><code>index.html</code></strong>
+                <p style="margin: 0.2rem 0 0; color: var(--text-secondary); font-size: 0.92rem;">
+                  Primary landing dashboard introducing the club, highlights, and onboarding flow.
+                </p>
+              </div>
+            </div>
+
+            <div class="checklist-item">
+              <span class="check-mark">2</span>
+              <div>
+                <strong><code>about.html</code></strong>
+                <p style="margin: 0.2rem 0 0; color: var(--text-secondary); font-size: 0.92rem;">
+                  Dedicated second page detailing mission, tracks, architecture, and FAQs.
+                </p>
+              </div>
+            </div>
+
+            <div class="checklist-item">
+              <span class="check-mark">3</span>
+              <div>
+                <strong><code>style.css</code></strong>
+                <p style="margin: 0.2rem 0 0; color: var(--text-secondary); font-size: 0.92rem;">
+                  Shared stylesheet defining theme tokens, cards, navigation, and responsive grids.
+                </p>
+              </div>
+            </div>
+
+            <div class="checklist-item">
+              <span class="check-mark">4</span>
+              <div>
+                <strong><code>Screenshot_20261123_182825_Google.jpg</code> &amp; <code>README.md</code></strong>
+                <p style="margin: 0.2rem 0 0; color: var(--text-secondary); font-size: 0.92rem;">
+                  University emblem asset in the root directory alongside project documentation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Navigation &amp; Asset Linking</h3>
+            <p>
+              Both <code>index.html</code> and <code>about.html</code> share relative paths so the site
+              runs smoothly both locally and on GitHub Pages without broken links.
+            </p>
+
+            <div class="code-snippet">
+              project-root/<br />
+              ├── index.html<br />
+              ├── about.html<br />
+              ├── style.css<br />
+              ├── Screenshot_20261123_182825_Google.jpg<br />
+              └── README.md
+            </div>
+
+            <div class="btn-row" style="margin-top: 1.1rem;">
+              <a href="index.html" class="btn btn-primary">Back to Home</a>
+              <a href="index.html#join" class="btn btn-secondary">Go to Join Form</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Quick Questions</h2>
+          <p>Clear answers for new members and competition reviewers.</p>
+        </div>
+
+        <div class="faq-item">
+          <details open>
+            <summary>Who can join the University Coding Club?</summary>
+            <p>
+              Students across CSE and related engineering batches who want to build consistent coding
+              habits, collaborate on projects, and participate in technical events are welcome.
+            </p>
+          </details>
+
+          <details>
+            <summary>Why is this project built as a two-page static site?</summary>
+            <p>
+              Splitting <code>index.html</code> (overview &amp; dashboard) and <code>about.html</code>
+              (mission, tracks, and architecture) keeps code modular, easy to maintain, and fast to load.
+            </p>
+          </details>
+
+          <details>
+            <summary>How is responsiveness handled across screen sizes?</summary>
+            <p>
+              CSS Grid, Flexbox, fluid typography, and responsive breakpoints adapt cards, navigation,
+              and buttons across mobile phones, tablets, and desktop monitors.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>University Coding Club</strong> • ITM University, Gwalior • Roll No: BETN1CS26134
+      </div>
+      <div class="social-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About &amp; Explore</a>
+        <a href="https://github.com/abhaykushwahtech27012008" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Track Filter Script -->
+  <script>
+    (function () {
+      const buttons = document.querySelectorAll(".filter-btn");
+      const cards = document.querySelectorAll(".track-card");
+      const banner = document.getElementById("trackStatusBanner");
+
+      const labels = {
+        all: "Showing all 6 club tracks across Web & UI, Programming, and Git Workflow.",
+        web: "Filtered to Web & UI tracks: Semantic HTML5, Modern CSS3, and Interactive DOM Logic.",
+        programming: "Filtered to Programming tracks: C Programming & Problem-Solving Foundations.",
+        tools: "Filtered to Git & Workflow tracks: GitHub Portfolios and Technical Documentation."
+      };
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.getAttribute("data-filter");
+
+          buttons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          let visibleCount = 0;
+          cards.forEach((card) => {
+            const category = card.getAttribute("data-category");
+            const show = filter === "all" || category === filter;
+            card.style.display = show ? "" : "none";
+            if (show) visibleCount += 1;
+          });
+
+          if (banner) {
+            banner.textContent = `${labels[filter] || ""} (${visibleCount} track${visibleCount === 1 ? "" : "s"} displayed)`;
+            banner.classList.add("show");
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
