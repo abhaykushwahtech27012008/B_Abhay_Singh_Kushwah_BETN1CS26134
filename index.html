@@ -3,320 +3,258 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>University Coding Club | Code. Create. Collaborate.</title>
+  <title>University Coding Club | ITM University, Gwalior</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Top Navigation, ITM University Logo & Club Identity -->
+  <!-- Sticky Top Navigation Bar -->
   <header class="navbar">
     <div class="container nav-inner">
-      <div class="brand">
-        <button
-          type="button"
-          id="logo-toggle-btn"
-          class="logo-badge"
-          title="Click for ITM University & Club Info"
-          aria-label="Toggle ITM University Info"
-        >
-          <img src="itm-logo.jpg" alt="ITM University Gwalior Logo" />
-        </button>
-
-        <a href="index.html">
+      <a href="index.html" class="brand" aria-label="University Coding Club Home">
+        <span class="logo-badge">
+          <img src="Screenshot_20261123_182825_Google.jpg" alt="ITM University Gwalior Logo" />
+        </span>
+        <span>
           <span class="brand-title">University Coding Club</span>
-          <span class="brand-sub">ITM University Gwalior &bull; Code. Create. Collaborate.</span>
-        </a>
-      </div>
+          <span class="brand-sub">ITM University, Gwalior • Code. Create. Collaborate.</span>
+        </span>
+      </a>
 
       <nav class="nav-links" aria-label="Primary Navigation">
-        <a href="index.html" class="nav-link active">Dashboard</a>
+        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
         <a href="about.html" class="nav-link">About &amp; Explore</a>
+        <a href="#highlights" class="nav-link">Highlights</a>
         <a href="#events" class="nav-link">Events</a>
-        <a href="#domains" class="nav-link">Domains</a>
-        <a href="#join-club" class="nav-link">Join Club</a>
+        <a href="#join" class="nav-link">Join Club</a>
       </nav>
     </div>
   </header>
 
-  <!-- Interactive Campus / Logo Info Banner -->
-  <div class="container" style="margin-top: 0.9rem;">
-    <div id="logo-info-banner" class="status-banner" role="region" aria-label="University & Club Details">
-      <strong>ITM University, Gwalior</strong> — NAAC Grade A Accredited University ("Celebrating Dreams").
-      Home to student-driven technical learning under <strong>University Coding Club</strong> (Code. Create. Collaborate.).
-    </div>
-  </div>
-
   <main>
     <!-- Hero Section -->
-    <section class="hero container">
-      <div class="hero-main">
-        <span class="badge">Student Developer Community</span>
-        <h1>Build Real Software. Solve Hard Problems. Grow Together.</h1>
+    <section class="container hero">
+      <div>
+        <span class="badge">ITM University, Gwalior • Official Student Tech Community</span>
+        <h1>Code. Create. Collaborate.</h1>
         <p>
-          Welcome to the University Coding Club—a peer-driven technical community where students practice
-          algorithms, ship web and software projects, host peer code reviews, and prepare for real-world
-          engineering challenges.
+          Welcome to the <strong>University Coding Club</strong>—a student-driven community for
+          B.Tech Computer Science &amp; Engineering builders to master C programming, front-end
+          web development, Git workflows, and competitive problem solving.
         </p>
 
         <div class="btn-row">
-          <a href="#join-club" class="btn btn-primary">Join the Club</a>
-          <a href="#events" class="btn btn-secondary">Register for an Event</a>
-          <a href="about.html#showcase" class="btn btn-secondary">Explore Projects</a>
-          <a href="about.html" class="btn btn-secondary">About &amp; Explore &rarr;</a>
+          <a href="#join" class="btn btn-primary">Register Now</a>
+          <a href="about.html" class="btn btn-secondary">Explore Tracks &amp; Architecture</a>
         </div>
       </div>
 
-      <!-- Club Snapshot Panel -->
-      <aside class="hero-panel" aria-label="Club Quick Overview">
-        <div>
-          <div class="terminal-top">
-            <span>club-status.sh</span>
-            <span class="terminal-status">ACTIVE</span>
-          </div>
-          <div class="terminal-line"><span>$</span> campus --name "ITM University, Gwalior"</div>
-          <div class="terminal-line"><span>$</span> club --theme "Code. Create. Collaborate."</div>
-          <div class="terminal-line"><span>$</span> tracks --active web, dsa, ai-ml, open-source</div>
-          <div class="terminal-line"><span>$</span> next-page --link "about.html"</div>
+      <!-- Interactive Terminal Preview Card -->
+      <aside class="hero-panel" aria-label="Club Live Status Terminal">
+        <div class="terminal-top">
+          <span><strong>club-terminal</strong> — bash</span>
+          <span class="terminal-status">● Active Session 2026</span>
         </div>
-
-        <div class="btn-row" style="margin-top: 0.8rem;">
-          <button type="button" id="inspect-logo-btn" class="btn btn-secondary" style="width: 100%;">
-            Inspect Campus &amp; Logo Badge
-          </button>
+        <div class="terminal-line"><span>$</span> git init university-coding-club</div>
+        <div class="terminal-line"><span>$</span> stack --load "HTML5, CSS3, JS, C"</div>
+        <div class="terminal-line"><span>$</span> campus --set "ITM University, Gwalior"</div>
+        <div class="terminal-line" style="margin-bottom: 0;">
+          <span>✓</span> Status: Ready for Hackathons &amp; Web Design
         </div>
       </aside>
     </section>
 
-    <!-- Club Highlights / Stats -->
-    <section class="section container" aria-labelledby="stats-heading">
-      <div class="section-header">
-        <h2 id="stats-heading">Club Highlights &amp; Impact</h2>
-        <p>Key numbers reflecting active participation and hands-on learning across campus.</p>
-      </div>
+    <!-- Club Highlights & Stats -->
+    <section id="highlights" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Club Impact &amp; Highlights</h2>
+          <p>Consistent weekly coding sessions, hands-on workshops, and collaborative builds.</p>
+        </div>
 
-      <div class="grid-4">
-        <article class="card stat-card-1">
-          <div class="stat-value">420+</div>
-          <div class="stat-label">Active Student Members</div>
-        </article>
-        <article class="card stat-card-2">
-          <div class="stat-value">38</div>
-          <div class="stat-label">Workshops, Contests &amp; Talks</div>
-        </article>
-        <article class="card stat-card-3">
-          <div class="stat-value">95+</div>
-          <div class="stat-label">Student Projects Built</div>
-        </article>
-        <article class="card stat-card-4">
-          <div class="stat-value">16</div>
-          <div class="stat-label">Hackathon &amp; Contest Teams</div>
-        </article>
-      </div>
-    </section>
+        <div class="grid-4">
+          <article class="card stat-card-1">
+            <div class="stat-value">120+</div>
+            <div class="stat-label">Active Student Builders</div>
+          </article>
 
-    <!-- Upcoming Events with Category Filter -->
-    <section id="events" class="section container" aria-labelledby="events-heading">
-      <div class="section-header">
-        <h2 id="events-heading">Upcoming Events &amp; Challenges</h2>
-        <p>Filter upcoming sessions by track and reserve your spot quickly.</p>
-      </div>
+          <article class="card stat-card-2">
+            <div class="stat-value">18+</div>
+            <div class="stat-label">Hands-On Coding Workshops</div>
+          </article>
 
-      <div class="filter-bar" role="group" aria-label="Filter events by category">
-        <button type="button" class="filter-btn active" data-filter="all">All Events</button>
-        <button type="button" class="filter-btn" data-filter="contest">Coding Contests</button>
-        <button type="button" class="filter-btn" data-filter="workshop">Workshops</button>
-        <button type="button" class="filter-btn" data-filter="hackathon">Hackathons &amp; Talks</button>
-      </div>
+          <article class="card stat-card-3">
+            <div class="stat-value">25+</div>
+            <div class="stat-label">Open-Source Mini Projects</div>
+          </article>
 
-      <div class="grid-3" id="events-grid">
-        <article class="card event-card" data-category="contest">
-          <h3>CodeSprint Weekly #14</h3>
-          <p>90-minute algorithmic problem-solving round covering arrays, recursion, and logic building.</p>
-          <span class="tag">Coding Contest &bull; Friday, 5:00 PM</span>
-          <div class="btn-row">
-            <button type="button" class="btn btn-secondary register-btn" data-event="CodeSprint Weekly #14">
-              Register for Event
-            </button>
-          </div>
-        </article>
-
-        <article class="card event-card" data-category="workshop">
-          <h3>Responsive Front-End &amp; Git Lab</h3>
-          <p>Hands-on session on semantic HTML, responsive CSS layouts, and clean Git workflows.</p>
-          <span class="tag">Workshop &bull; Tuesday, 4:00 PM</span>
-          <div class="btn-row">
-            <button type="button" class="btn btn-secondary register-btn" data-event="Responsive Front-End &amp; Git Lab">
-              Register for Event
-            </button>
-          </div>
-        </article>
-
-        <article class="card event-card" data-category="hackathon">
-          <h3>Campus Buildathon &amp; Debugging Sprint</h3>
-          <p>Team sprint to prototype practical student tools, fix tricky bugs, and demo live solutions.</p>
-          <span class="tag">Hackathon &bull; Next Saturday</span>
-          <div class="btn-row">
-            <button type="button" class="btn btn-secondary register-btn" data-event="Campus Buildathon &amp; Debugging Sprint">
-              Participate in Challenge
-            </button>
-          </div>
-        </article>
-      </div>
-
-      <div id="event-status" class="status-banner" role="status" aria-live="polite"></div>
-    </section>
-
-    <!-- Technical Domains / Activities -->
-    <section id="domains" class="section container" aria-labelledby="domains-heading">
-      <div class="section-header">
-        <h2 id="domains-heading">Technical Domains &amp; Focus Areas</h2>
-        <p>Core tracks where members learn fundamentals, collaborate on builds, and mentor peers.</p>
-      </div>
-
-      <div class="grid-4">
-        <article class="card">
-          <h3>Competitive Programming</h3>
-          <p>Data structures, problem decomposition, time/space complexity, and timed practice rounds.</p>
-          <span class="tag">Algorithms &amp; Logic</span>
-        </article>
-
-        <article class="card">
-          <h3>Web &amp; App Development</h3>
-          <p>Accessible interfaces, responsive layouts, client-side interactivity, and modern web tooling.</p>
-          <span class="tag">HTML &bull; CSS &bull; JS</span>
-        </article>
-
-        <article class="card">
-          <h3>AI, ML &amp; Data Science</h3>
-          <p>Data exploration, foundational models, practical problem framing, and applied mini-projects.</p>
-          <span class="tag">Applied Intelligence</span>
-        </article>
-
-        <article class="card">
-          <h3>Open Source &amp; Systems</h3>
-          <p>Version control, code reviews, documentation habits, developer tools, and security basics.</p>
-          <span class="tag">Git &amp; Collaboration</span>
-        </article>
+          <article class="card stat-card-4">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Peer Mentorship &amp; Git Practice</div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- Call to Action / Quick Join -->
-    <section id="join-club" class="section container" aria-labelledby="join-heading">
-      <div class="section-header">
-        <h2 id="join-heading">Join the University Coding Club</h2>
-        <p>Start building with peers, join a domain track, and explore more on our second page.</p>
+    <!-- Upcoming Events & Hackathons -->
+    <section id="events" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Upcoming Club Events &amp; Sprints</h2>
+          <p>Practical campus events designed to sharpen real-world engineering skills.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3>Front-End Web Design Challenge</h3>
+            <p>
+              Build clean, multi-page responsive web interfaces using semantic HTML5, modern CSS3
+              variables, and interactive JavaScript.
+            </p>
+            <span class="tag">Track B • UI &amp; Web Engineering</span>
+          </article>
+
+          <article class="card">
+            <h3>C Programming Logic Sprint</h3>
+            <p>
+              Timed problem-solving session covering arrays, loops, functions, and clean debugging
+              strategies for first-year engineers.
+            </p>
+            <span class="tag">Core Programming • Lab Prep</span>
+          </article>
+
+          <article class="card">
+            <h3>Git &amp; GitHub Portfolio Bootcamp</h3>
+            <p>
+              Learn repository structuring, clean commit history, README documentation, and live
+              project hosting on GitHub.
+            </p>
+            <span class="tag">Developer Tools • Open Source</span>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="form-box">
-        <form id="join-form" class="form-grid">
-          <div class="form-group">
-            <label for="student-name">Full Name</label>
-            <input id="student-name" name="studentName" type="text" placeholder="Enter your full name" required />
-          </div>
+    <!-- Interactive Member Registration Form -->
+    <section id="join" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Join University Coding Club</h2>
+          <p>Fill out your details below to register for upcoming workshops and coding sprints.</p>
+        </div>
 
-          <div class="form-group">
-            <label for="roll-no">Roll Number / Student ID</label>
-            <input id="roll-no" name="rollNo" type="text" placeholder="e.g., BETN1CS26134" required />
-          </div>
+        <div class="form-box">
+          <form id="joinForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="studentName">Full Name</label>
+                <input
+                  type="text"
+                  id="studentName"
+                  name="studentName"
+                  placeholder="e.g., Abhay Singh Kushwah"
+                  required
+                />
+              </div>
 
-          <div class="form-group">
-            <label for="domain-select">Primary Domain Interest</label>
-            <select id="domain-select" name="domain">
-              <option value="Competitive Programming">Competitive Programming</option>
-              <option value="Web & App Development">Web &amp; App Development</option>
-              <option value="AI, ML & Data Science">AI, ML &amp; Data Science</option>
-              <option value="Open Source & Systems">Open Source &amp; Systems</option>
-            </select>
-          </div>
+              <div class="form-group">
+                <label for="rollNumber">University Roll Number</label>
+                <input
+                  type="text"
+                  id="rollNumber"
+                  name="rollNumber"
+                  placeholder="e.g., BETN1CS26134"
+                  required
+                />
+              </div>
 
-          <div class="form-group">
-            <label for="goal-input">What do you want to build or learn?</label>
-            <input id="goal-input" name="goal" type="text" placeholder="e.g., Front-end UI, problem solving, team projects" />
-          </div>
+              <div class="form-group">
+                <label for="branchSection">Branch &amp; Section</label>
+                <input
+                  type="text"
+                  id="branchSection"
+                  name="branchSection"
+                  placeholder="e.g., B.Tech CSE — Section C"
+                  required
+                />
+              </div>
 
-          <div class="form-group full">
-            <div class="btn-row" style="margin-top: 0.25rem;">
-              <button type="submit" class="btn btn-primary">Submit Membership Request</button>
-              <a href="about.html" class="btn btn-secondary">Visit About &amp; Explore Page</a>
+              <div class="form-group">
+                <label for="primaryTrack">Preferred Coding Track</label>
+                <select id="primaryTrack" name="primaryTrack" required>
+                  <option value="">Select a track...</option>
+                  <option value="Web & UI Design (HTML/CSS/JS)">Web &amp; UI Design (HTML/CSS/JS)</option>
+                  <option value="C Programming & Problem Solving">C Programming &amp; Problem Solving</option>
+                  <option value="Git, GitHub & Open Source">Git, GitHub &amp; Open Source</option>
+                  <option value="Competitive Programming">Competitive Programming</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <button type="submit" class="btn btn-primary">Submit Membership Registration</button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
 
-        <div id="join-status" class="status-banner" role="status" aria-live="polite"></div>
+          <div id="joinStatusBanner" class="status-banner" role="status" aria-live="polite"></div>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Community Links & Footer -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
       <div>
-        <strong>University Coding Club &bull; ITM University Gwalior</strong>
-        <p>Code. Create. Collaborate. &bull; Page 1 of 2 (Dashboard)</p>
+        <strong>University Coding Club</strong> • ITM University, Gwalior • B.Tech CSE (Batch 2026)
       </div>
-
-      <div class="social-links" aria-label="Community Links">
+      <div class="social-links">
+        <a href="index.html">Home</a>
         <a href="about.html">About &amp; Explore</a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://discord.com" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="https://github.com/abhaykushwahtech27012008" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
   </footer>
 
-  <!-- Interactive Behavior for Logo Info, Event Filters & Join Form -->
+  <!-- Interactive Form Submission Script -->
   <script>
-    const logoToggleBtn = document.getElementById("logo-toggle-btn");
-    const inspectLogoBtn = document.getElementById("inspect-logo-btn");
-    const logoInfoBanner = document.getElementById("logo-info-banner");
+    (function () {
+      const form = document.getElementById("joinForm");
+      const banner = document.getElementById("joinStatusBanner");
 
-    function toggleLogoBanner() {
-      logoInfoBanner.classList.toggle("show");
-    }
+      if (!form || !banner) return;
 
-    logoToggleBtn.addEventListener("click", toggleLogoBanner);
-    inspectLogoBtn.addEventListener("click", toggleLogoBanner);
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-    const filterButtons = document.querySelectorAll(".filter-btn");
-    const eventCards = document.querySelectorAll(".event-card");
-    const eventStatus = document.getElementById("event-status");
+        const name = document.getElementById("studentName").value.trim();
+        const roll = document.getElementById("rollNumber").value.trim();
+        const branch = document.getElementById("branchSection").value.trim();
+        const track = document.getElementById("primaryTrack").value;
 
-    filterButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const selectedCategory = button.dataset.filter;
+        if (!name || !roll || !branch || !track) {
+          banner.style.backgroundColor = "#fee2e2";
+          banner.style.borderColor = "#fca5a5";
+          banner.textContent = "Please fill in all fields (Name, Roll Number, Branch/Section, and Track) before submitting.";
+          banner.classList.add("show");
+          return;
+        }
 
-        filterButtons.forEach((btn) => btn.classList.remove("active"));
-        button.classList.add("active");
-
-        eventCards.forEach((card) => {
-          const matches = selectedCategory === "all" || card.dataset.category === selectedCategory;
-          card.style.display = matches ? "block" : "none";
-        });
+        banner.style.backgroundColor = "var(--accent-soft)";
+        banner.style.borderColor = "#bfd7ff";
+        banner.innerHTML =
+          "<strong>Registration Confirmed!</strong> Welcome, <strong>" +
+          name +
+          "</strong> (" +
+          roll +
+          " • " +
+          branch +
+          "). You are registered for the <strong>" +
+          track +
+          "</strong> track.";
+        banner.classList.add("show");
+        form.reset();
       });
-    });
-
-    const registerButtons = document.querySelectorAll(".register-btn");
-    registerButtons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const eventName = btn.dataset.event;
-        eventStatus.textContent = `Selected "${eventName}". Complete your details in the Join Club section below to confirm your interest.`;
-        eventStatus.classList.add("show");
-      });
-    });
-
-    const joinForm = document.getElementById("join-form");
-    const joinStatus = document.getElementById("join-status");
-
-    joinForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const nameValue = document.getElementById("student-name").value.trim();
-      const rollValue = document.getElementById("roll-no").value.trim();
-      const domainValue = document.getElementById("domain-select").value;
-
-      joinStatus.textContent = `Welcome, ${nameValue} (${rollValue})! Your interest in ${domainValue} has been noted for the University Coding Club.`;
-      joinStatus.classList.add("show");
-      joinForm.reset();
-    });
+    })();
   </script>
 </body>
 </html>
