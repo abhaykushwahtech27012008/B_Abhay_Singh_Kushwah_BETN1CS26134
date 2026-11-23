@@ -1,35 +1,38 @@
 # Hi there! 👋 I'm Abhay Singh Kushwah
 
-- **Student:** B.Tech Computer Science & Engineering (First Year, 2026 Batch) | ITM University, Gwalior
-- **Roll Number:** BETN1CS26134 | **Section:** C
+- **Student:** B.Tech Computer Science & Engineering, First Year, 2026 Batch, ITM University, Gwalior
+- **Roll Number:** BETN1CS26134
+- **Section:** C
+- **Session:** 2026–2030
 
-## Front-End Web Designing Competition — Track B (University Coding Club)
-This repository contains my two-page front-end website built for the **Front-End Web Designing Competition** organized by **Code Craft Society, ITM University, Gwalior** (Theme: *Code. Create. Collaborate.*).
+---
 
-## Track & Technologies Used
-- **Selected Track:** Track B — University Coding Club
-- **Technologies:** HTML5, CSS3, JavaScript
+# University Coding Club — ITM University, Gwalior
 
-## Project Structure
-- `index.html` — Home / Coding Club Dashboard (Page 1)
-- `about.html` — About & Explore (Page 2)
-- `style.css` — Shared styling and responsive layout
-- `itm-logo.jpg` — ITM University Gwalior logo asset
-- `README.md` — Project documentation and declarations
+A two-page responsive front-end website built for **Track B (Front-End Web Designing Competition)** by the **University Coding Club** under the theme **"Code. Create. Collaborate."**
 
-## Key Highlights of My Work
-- **Custom Front-End Build:** Designed and coded with semantic HTML5, responsive CSS3 layout rules, and interactive JavaScript behavior.
-- **Two-Page Experience:** Seamless navigation between the Home Dashboard (`index.html`) and About & Explore (`about.html`).
+## Project Overview
+
+- **Institution:** ITM University, Gwalior
+- **Student:** Abhay Singh Kushwah
+- **Branch & Section:** B.Tech Computer Science and Engineering (CSE), Section C
+- **Batch / Session:** 2026–2030
+- **Roll Number:** BETN1CS26134
+- **Pages Included:** `index.html` and `about.html`
+
+## Features & Structure
+
+- **Two-Page Navigation:** Seamless linking between `index.html` (Home & Registration) and `about.html` (Mission, Tracks, Architecture & FAQs).
+- **Shared Global Stylesheet (`style.css`):** Uses CSS custom properties, Flexbox, CSS Grid, hover states, and responsive breakpoints for mobile, tablet, and desktop views.
+- **Interactive UI Elements:** Includes live registration form validation and confirmation feedback on `index.html`, plus interactive track filtering on `about.html`.
 - **Clean & Explainable Structure:** Organized sections and interactive controls that are easy to walk through and explain during review.
 
-## How to Run the Website
-1. Download or clone the repository files (`index.html`, `about.html`, `style.css`, `itm-logo.jpg`, `README.md`) into a single folder.
-2. Open `index.html` directly in a modern web browser such as Google Chrome, Microsoft Edge, or Mozilla Firefox (no local server required).
-3. Use the navigation bar to switch between `index.html` and `about.html`.
+## Repository Files
 
-## Credits & Assets
-- **Custom Design & UI:** Styled and structured with custom CSS and SVG elements.
-- **University Logo (`itm-logo.jpg`):** ITM University Gwalior logo image included in the repository for campus identity.
-
-## AI Usage Declaration
-AI assistant was only used for brainstorming.
+```text
+project-root/
+├── index.html
+├── about.html
+├── style.css
+├── Screenshot_20261123_182825_Google.jpg
+└── README.md
